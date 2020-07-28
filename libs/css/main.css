@@ -1,0 +1,131 @@
+:root{
+  --main-bg-color: #ff7675;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+ol,
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 100%;
+}
+
+.container{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.wrapper{
+  padding: 20px 0;
+}
+.card{
+  overflow: hidden;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 6px rgba(7, 17, 27, .06);
+  transition: all .3s;
+}
+.card__picture{
+  display: block;
+  width: 100%;
+  height: ;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.card-infos{
+  padding: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.card__title{
+  font-size: .5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  display: inline;
+}
+.card__text{
+  font-size: .3rem;
+  font-weight: 300;
+  margin: 0;
+  display: inline;
+}
+.card__text--high{
+  font-weight: 600;
+}
+
+.sortable__nav{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: .5rem;
+  
+}
+.nav__link{
+  padding: 0 20px 4px;
+  font-size: .8rem;
+  font-weight: 300;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.nav__link.is-active{
+  border-color: var(--main-bg-color);
+}
+
+.footer__list.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list__item.item{
+  display: flex;
+}
+.item__link.link{
+  margin: 0;
+}
+.item__link.link:not(:first-child){
+  margin-left: 20px;
+}
+.link__icon{
+  height: 2rem;
+  width: 2rem;
+}
+
+.stamp {
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  position: absolute;
+  border: 4px solid red ;
+  color: red;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.6rem;
+  opacity: .7;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  z-index: 99;
+}
+
+.drop {
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  position: absolute;
+  border: 4px solid grey ;
+  color:  grey;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.6rem;
+  opacity: .7;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  z-index: 99;
+}
